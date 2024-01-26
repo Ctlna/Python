@@ -2,4 +2,4 @@
 def sin(a,b):
     rest = a*b
     return rest
-print(f"{sin(8,3)}")
+print(sin(8,3))
