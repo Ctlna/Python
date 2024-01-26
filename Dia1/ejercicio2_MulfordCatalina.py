@@ -1,4 +1,4 @@
-#Funciones1
+#Funciones1 con,con
 def sin(a,b):
     rest = a*b
     return rest
