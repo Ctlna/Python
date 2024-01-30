@@ -2,19 +2,11 @@ m = int(input())
 ten = []
 five = []
 one = []
-
-def cos(m, n):
-    d = m - n
-    return (d)
-
-while m >= 10:
-    cos(m, 10)
-    ten.append(+1)
-    while 5 <= m < 10:
-        cos(m, 5)
-        five.append(+1)
-        while m < 5:
-            cos(m, 1)
-            one.append(+1)
-
-print(ten, "coins of ten,", five, "coins of five,", one, "coins of one.")
+def cn(ca, n, cash):
+    cu = ca // n 
+    cash.append(cu)
+    return ca - cu * n
+m = cn(m, 10, ten)
+m = cn(m, 5, five)
+m = cn(m, 1, one)
+print(ten[0], " coins of ten, ", five[0], " coins of five, ", one[0], " coins of one.")
