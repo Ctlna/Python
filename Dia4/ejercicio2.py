@@ -8,20 +8,18 @@ def T(x, ye):
         n = int(input())
         ye.append(n)
 
-def calcu(lc, lt, List_coins):
-    result = []
+def mcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
 
-    for i in range(lc):
-        set_list = List_coins[i * lt: (i + 1) * lt]
-        length = sum(set_list[:lt // 2]) - sum(set_list[lt // 2:])
-        gleg = max(x for x in set_list if x <= length)
-        smalleg = min(x for x in set_list if x >= length)
-        result.append((gleg, smalleg))
-    return result
+def mcm(a, b):
+    return abs(a * b) // mcd(a, b)
 
-cont = True
+cont=bool
 
 while cont:
+    legita=[]
     coins = []
     table = []
     cosito = input()
@@ -36,16 +34,16 @@ while cont:
         if 4 <= len(coins) <= 50:
             pass  
         else:
-            exit("")
+            exit()
 
         if 1 <= len(table) <= 10:
             pass 
         else:
-            exit("")
-
-    output = calcu(cc, ct, coins)
-    for leles in output:
-        print(f"{leles[0]} {leles[1]}")
+            exit()
+    mcd = mcd(cc, ct)
+    mcm = mcm(cc, ct)
+print(mcm,mcd)
+   
 
 #Catalina Mulford Monroy
 #Daniela Forero Ballen
