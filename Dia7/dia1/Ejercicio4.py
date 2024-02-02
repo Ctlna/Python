@@ -1,5 +1,5 @@
 #ejercicio4
 import Modulosd1
 
-print(Modulosd1.Comoqno)
+Modulosd1.con()
 #Catalina Mulford Monroy
