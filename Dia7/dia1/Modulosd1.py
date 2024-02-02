@@ -17,8 +17,10 @@ def sin(a,b):
     return rest
 
 #2
+s=int
 def consa (a,b):
     s=a+b*2
+    return s
 
 
 #Funciones3
