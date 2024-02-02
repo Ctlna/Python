@@ -1,7 +1,14 @@
 ##Ejercicio arreglo
-def listar(x):
-    lista = ["Juan","Maria","Jose"]
+#FFF
+lista = ["Juan","Maria","Jose"]
+def listar():
+    global lista
     return(lista)
+
+def agregarLista(x):
+    global lista
+    lista.append(x)
+    return True
 
 
 #ejercicio1
