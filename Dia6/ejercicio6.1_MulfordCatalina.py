@@ -17,3 +17,4 @@ big=large_num(b)
 # 1. b no estaba definida
 # 2. las variables para llamar al número negatico estaban mal, junto con el orden.
 # 3. la función de mayor a 10000 no tenia bien escrito lo que se retornaria.
+#Catalina Mulford Monroy 
