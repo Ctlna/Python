@@ -1,0 +1,6 @@
+Mutable: Is when an object can be changed after it is created.
+-List is mutable
+-Dictionaries is mutable
+Immutable: Is when an object can't be changed after it is created.
+-String is immutable
+-Tuples is immutable
