@@ -19,3 +19,4 @@ variableConsulta= diccionario[producto]
 valorFinal = variableConsulta* cant
 print(f"EL valor total del produto {producto} será de: {valorFinal}")
 
+#Catalina Mulford Monroy 
