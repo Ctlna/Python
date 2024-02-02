@@ -24,3 +24,9 @@ def consa (a,b):
 #Funciones3
 def consin():
     return print("Con retorno, sin parametro" )
+
+#Funciones4 sin sin
+def con ():
+    print("Sin nada de nada")
+
+#Catalina Mulford Monroy
