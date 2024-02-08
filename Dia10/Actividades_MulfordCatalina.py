@@ -40,6 +40,15 @@ print(ListaDel2017)
 
 # 5. comerciales que tienen una comisión entre 0.05 y 0.11
 print("")
+cont=0
+comin=[]
+for j in pausar["ventas"]["comerciales"]:
+    if 0.05<=pausar["ventas"]["comerciales"][cont]["comisión"]<=0.11 :
+            comin.append(j)
+            cont += 1
+    else:
+            cont += 1
+print(comin)
 
 # 6. valor comisiòn màs alta
 print("")
@@ -91,3 +100,5 @@ for j in orden:
         ape.append(j)
 ape.sort(key=itemgetter("nombre", "apellido1") ) 
 print(ape)
+
+#Catalina Mulford Monroy
