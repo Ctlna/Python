@@ -1,32 +1,25 @@
-#import datetime
 import json
 dici=open("data.json")
 pausar=json.load(dici)
-#print(pausar)
 
+#Leer
+print(pausar)
 
-# CREAR UN CRUD (CREACION,LECTURA,ACTUALIZACIÓN Y ELIMINACIÓN) DE LOS 3 CONJUNTOS DE DATOS ADENTRO DE DATA.JSON, LOS CUALES DEBEN SER PERSISTENTES DONDE APLIQUE.
-
-#crear
+#crear/actualizar
 t=pausar["ventas"]["clientes"]
-print("id-nombre-apellido1-ciudad-categoría (Pon las categorias tu mismo)")
-nuevito=input("")
+nuevito=input("Por favor ingrese los siguientes datos separados por comas: id, nombre, apellido, ciudad, categoría\n").split(",")
 t.append(nuevito)
+print(t)
 with open("data.json", "w") as file:
     json.dump(pausar, file)
 
-#actualizar
-print("")
-a=pausar["ventas"]["comerciales"]
-print("id-nombre-apellido1-ciudad-categoría")
-cambiar=input("")
-a.append(cambiar["id_cliente"][0])
+#Eliminar
+ventas = pausar["ventas"]
+pedidos = ventas["pedidos"]
+eliminar = input("Fila a eliminar: ")
+nuedos = [pedido for pedido in pedidos if eliminar not in pedido]
+ventas["pedidos"] = nuedos
 with open("data.json", "w") as file:
-    json.dump(pausar, file)                                               
-print(a)
-#eliminar
-
-
-#leer
-print("")
+    json.dump(pausar, file)
 print(pausar)
+
